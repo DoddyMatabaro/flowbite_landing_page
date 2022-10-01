@@ -1,8 +1,13 @@
 import React from 'react'
+import Choose from '../compenents/Choose'
+import Hero from '../compenents/Hero'
 
 function Home() {
   return (
-    <div>Home</div>
+    <section className='h-sreen'>
+        <Hero/>
+        <Choose/>
+    </section>
   )
 }
 
