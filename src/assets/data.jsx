@@ -3,6 +3,10 @@ import myLogo from './logo1.png';
 import heroImage from './images/background.jpg';
 import heroImage2 from './images/ECR/hero.jpg';
 import heroImage3 from './images/ECR/hero2.png';
+import etude from '../assets/dimension/etude.jpeg';
+import cons from '../assets/dimension/con.jpg';
+import realisation from '../assets/dimension/realisation.jpg';
+
 import profil from './images/testimonials/profile.jpg';
 // import presentation from './videos/test.mp4'
 
@@ -69,18 +73,18 @@ export const rightLinks = [
 export const dimension = [
   {
     id: 1,
-    title: 'Premiere dimension',
-    imgae: "./src/assets/images/dimension/",
+    title: 'Etude',
+    image: etude,
   },
   {
     id: 2,
-    title: 'Second Dimension',
-    imgae: "./src/assets/images/dimension/",
+    title: 'Conception',
+    image: cons,
   },
   {
     id: 3,
-    title: 'last dime',
-    image: "./src/assets/images/dimension/",
+    title: 'Réalisation',
+    image: realisation,
   },
 ];
   
@@ -190,7 +194,6 @@ export  const chooseUs = [
         ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
     }
   ];
-  
   
 
   export const FAQBase = [
