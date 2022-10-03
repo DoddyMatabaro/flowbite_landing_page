@@ -6,6 +6,9 @@ import heroImage3 from './images/ECR/hero2.png';
 import etude from '../assets/dimension/etude.jpeg';
 import cons from '../assets/dimension/con.jpg';
 import realisation from '../assets/dimension/realisation.jpg';
+import left from '../assets/projects/left.jpg'
+import right from '../assets/projects/right.jpg'
+import middle from '../assets/projects/paroisse.jpg'
 
 import profil from './images/testimonials/profile.jpg';
 // import presentation from './videos/test.mp4'
@@ -88,24 +91,6 @@ export const dimension = [
   },
 ];
   
-export const projects = [
-  {
-    id: 1,
-    title: "Titre ",
-    description: "desciption du projet",
-
-    image1: "./src/assets/images/projets/",
-    image2: "./src/assets/images/projets/",
-    image3: "./src/assets/images/projets/",
-  },
-  {
-    id: 1,
-    title: 'Premiere dimension',
-    image1: "./src/assets/images/project/",
-    image2: "./src/assets/images/project/",
-    image3: "./src/assets/images/project/",
-  }, 
-];
 
 const social = [
     {
@@ -126,7 +111,22 @@ const social = [
   
   ];
   
+  // projects images 
+  const cache = {};
+  function importAll(r) {
+    r.keys().forEach((key) => (cache[key] = r(key)));
+  }
+  // Note from the docs -> Warning: The arguments passed to require.context must be literals!
+  importAll(require.context("../assets/ECR", false, /\.(png|jpe?g|svg)$/));
+  export const projects = Object.entries(cache).map(module => module[1]);
+  // uses eg 
+//   {projects.map((image,index) => (
+//     <img  key={index.toString()} style={{width: 100}} src={image} />
+// ))}
 
+// project eg files
+export const projectsEg = [left, middle, right];
+  
 export  const chooseUs = [
     {
       id: "01",

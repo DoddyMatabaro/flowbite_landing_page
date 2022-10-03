@@ -1,6 +1,7 @@
 import React from 'react'
 import Choose from '../compenents/Choose'
 import Dimension from '../compenents/Dimension'
+import EgProjects from '../compenents/EgProjects'
 import Hero from '../compenents/Hero'
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <Hero/>
         <Choose/>
         <Dimension/>
+        <EgProjects/>
     </section>
   )
 }
