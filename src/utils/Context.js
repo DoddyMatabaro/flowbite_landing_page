@@ -16,6 +16,6 @@ export function AppProvider({ initialState, reducer, children}){
 
 };
 
-export const globalContext =()=>{
+export const GlobalContext =()=>{
     return useContext(AppContext);
 }

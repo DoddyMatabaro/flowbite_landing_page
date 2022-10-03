@@ -3,6 +3,8 @@ import Choose from '../compenents/Choose'
 import Dimension from '../compenents/Dimension'
 import EgProjects from '../compenents/EgProjects'
 import Hero from '../compenents/Hero'
+import Presentation from '../compenents/Presentation'
+import Testimonials from '../compenents/Testimonials'
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
         <Choose/>
         <Dimension/>
         <EgProjects/>
+        <Presentation/>
+        <Testimonials/>
     </section>
   )
 }
