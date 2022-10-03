@@ -4,6 +4,7 @@ import Dimension from '../compenents/Dimension'
 import EgProjects from '../compenents/EgProjects'
 import Hero from '../compenents/Hero'
 import Presentation from '../compenents/Presentation'
+import Question from '../compenents/Question'
 import Testimonials from '../compenents/Testimonials'
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
         <EgProjects/>
         <Presentation/>
         <Testimonials/>
+        <Question/>
     </section>
   )
 }
