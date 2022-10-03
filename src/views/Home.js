@@ -1,5 +1,6 @@
 import React from 'react'
 import Choose from '../compenents/Choose'
+import Contact from '../compenents/Contact'
 import Dimension from '../compenents/Dimension'
 import EgProjects from '../compenents/EgProjects'
 import Hero from '../compenents/Hero'
@@ -17,6 +18,7 @@ function Home() {
         <Presentation/>
         <Testimonials/>
         <Question/>
+        <Contact/>
     </section>
   )
 }
