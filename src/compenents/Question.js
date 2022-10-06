@@ -6,10 +6,11 @@ import { FAQBase } from '../assets/data'
 function Question() {
   return (
     <section className='w-full bg-white min-h-screen dark:bg-gray-900   px-10 flex flex-col gap-20'>
-    <article className="h-[5%] flex flex-row  text-gray-900 dark:text-white gap-4">
-            <div className= "bg-gray-900 dark:bg-white h-2 w-1 mt-5"></div>
-            <h1 className="text-3xl font-bold uppercase ">Question fréquements posées </h1>
-  </article>
+        <div className="mb-4 flex items-center justify-between">
+            <h5 className="text-4xl uppercase font-bold leading-none text-gray-900 dark:text-white">
+                Nos projets
+            </h5>
+        </div>
   <div>
   {FAQBase.map((item)=>{
                     return(

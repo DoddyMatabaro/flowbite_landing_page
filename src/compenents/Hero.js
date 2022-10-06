@@ -5,8 +5,8 @@ import {hero, heroPics} from '../assets/data';
 function Hero() {
     console.log(heroPics);
   return (
-    <>
-        <div className="sm:h-64 xl:h-80 2xl:h-96">
+    <div>
+        <div className="sm:h-64 xl:h-96 2xl:h-96 ">
             <Carousel slideInterval={5000}>
                 {heroPics.map((pics, index)=>{
                         return(
@@ -36,7 +36,7 @@ function Hero() {
                 </Card>
         </div>
 
-    </>
+    </div>
   )
 }
 

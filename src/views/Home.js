@@ -12,7 +12,7 @@ import { useTransition } from 'react-spring'
 function Home() {
 
   return (
- <section className='w-full scroll-smooth grid grid-rows-10 grid-flow-row dark:bg-slate-900'>
+ <section className='w-full scroll-smooth grid grid-rows-8 grid-flow-row dark:bg-slate-900'>
         <Hero/>
         <Choose/>
         <Dimension/>

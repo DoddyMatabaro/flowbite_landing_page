@@ -15,7 +15,7 @@ function Layout() {
             >
             <Navbar.Brand href="#">
                 <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src={logo}
                 className="mr-3 h-6 sm:h-9"
                 alt="Flowbite Logo"
                 />
@@ -51,7 +51,7 @@ function Layout() {
     <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
       <div>
         <Footer.Brand
-          href="https://flowbite.com"
+          href="#"
           src={logo}
           alt="ECR logo"
           name="ECR sarl"

@@ -11,11 +11,11 @@ function EgProjects() {
     <section className='h-screen sm:h-auto md:h-screen px-10 py-20 flex flex-col gap-20'>
 
       <div className="mb-4 flex items-center justify-between">
-      <h5 className="text-4xl font-bold leading-none text-gray-900 dark:text-white">
-         Pourquoi nous sommes le meilleur choix
+      <h5 className="text-4xl uppercase font-bold leading-none text-gray-900 dark:text-white">
+          Nos projets
       </h5>
       <a
-        href="#"
+        href="/projets"
         className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
       >
         Voir plus

@@ -10,18 +10,19 @@ function Testimonials() {
   const[{ testimonialsData}, dispatch] = GlobalContext();
  
   return (
-    <section className='h-auto  bg-white dark:bg-gray-900  sm:h-auto md:h-screen px-10 py-20 flex flex-col gap-20'>
-      <div className="">
+    <section className=' bg-white dark:bg-gray-900  h-auto  px-10 py-20 flex flex-col gap-4'>
           <h5 className="text-4xl font-bold uppercase leading-none text-gray-900 dark:text-white">
-                Pourquoi nous sommes le meilleur choix
-            </h5>
+                Ce que disent nos client      
+          </h5>
+      <div className="h-96">
       <Carousel
-        leftControl={<FiChevronLeft className='text-3xl  text-gray-900 dark:text-white'/>}
-        rightControl={<FiChevronRight className='text-3xl  text-gray-900 dark:text-white'/>}
-      >
-        {testimonialsData.map((elt, index)=>{
-          return(
+          leftControl={<FiChevronLeft className='text-3xl  text-gray-900 dark:text-white'/>}
+          rightControl={<FiChevronRight className='text-3xl  text-gray-900 dark:text-white'/>}
+        >
 
+        {testimonialsData.map((elt, index)=>{
+        console.log(elt);
+          return(
           <div key={elt.id} className="max-w-screen-xl  px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
               <figure className="max-w-screen-md mx-auto">
                   <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
