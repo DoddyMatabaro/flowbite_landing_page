@@ -8,7 +8,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from 'react-icons/bs'
 
 function Layout() {
   return (
-    <>
+    <div className='dark:bg-slate-900'>
         <Navbar
             fluid={true}
             rounded={true}
@@ -122,7 +122,7 @@ function Layout() {
         </div>
       </div>
     </Footer>
-    </>
+    </div>
   )
 }
 

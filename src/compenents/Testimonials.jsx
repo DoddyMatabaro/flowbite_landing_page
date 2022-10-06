@@ -11,11 +11,10 @@ function Testimonials() {
  
   return (
     <section className='h-auto  bg-white dark:bg-gray-900  sm:h-auto md:h-screen px-10 py-20 flex flex-col gap-20'>
-        <article className="h-[5%] flex flex-row  text-gray-900 dark:text-white gap-4">
-                <div className= "bg-gray-900 dark:bg-white h-2 w-1 mt-5"></div>
-                <h1 className="text-3xl font-bold uppercase ">Ce que disent nos clients sur nous </h1>
-      </article>
-      <div className="h-[95%] ">
+      <div className="">
+          <h5 className="text-4xl font-bold uppercase leading-none text-gray-900 dark:text-white">
+                Pourquoi nous sommes le meilleur choix
+            </h5>
       <Carousel
         leftControl={<FiChevronLeft className='text-3xl  text-gray-900 dark:text-white'/>}
         rightControl={<FiChevronRight className='text-3xl  text-gray-900 dark:text-white'/>}

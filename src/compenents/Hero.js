@@ -1,33 +1,23 @@
 import { Card, Carousel } from 'flowbite-react'
 import React from 'react'
-import {hero} from '../assets/data';
-
+import {hero, heroPics} from '../assets/data';
 
 function Hero() {
+    console.log(heroPics);
   return (
-    <div>
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+    <>
+        <div className="sm:h-64 xl:h-80 2xl:h-96">
             <Carousel slideInterval={5000}>
-                <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt="..."
-                />
-                <img
-                src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-                alt="..."
-                />
-                <img
-                src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-                alt="..."
-                />
-                <img
-                src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-                alt="..."
-                />
-                <img
-                src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-                alt="..."
-                />
+                {heroPics.map((pics, index)=>{
+                        return(
+                            <img
+                                src={pics}
+                                alt="Project "
+                                key={index.toString()}
+                                className="h-full"
+                            />
+                        )
+                })}
             </Carousel>
         </div>
         <div className='grid grid-cols-2 gap-4 m-4 md:grid-cols-2 sm:grid-cols-1'>
@@ -38,7 +28,7 @@ function Hero() {
                 </Card>
                 <Card href="#">
                     <h3 className="text-2xl  font-bold tracking-tight text-gray-900 dark:text-white">
-                        Appropos  : 
+                        Apropos  : 
                     </h3>
                     <p className="font-normal text-gray-700 dark:text-gray-400">
                           {hero.about_info}
@@ -46,7 +36,7 @@ function Hero() {
                 </Card>
         </div>
 
-    </div>
+    </>
   )
 }
 

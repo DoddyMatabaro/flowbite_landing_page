@@ -5,16 +5,18 @@ import { chooseUs } from '../assets/data'
 function Choose() {
   return (
     <section className='h-screen sm:h-auto  px-10 py-20 flex flex-col gap-20'>
-    <article className="flex flex-row gap-4">
-            <div className='bg-black h-4 w-3 mt-5'></div>
-            <h1 className="text-5xl font-bold uppercase ">Pourquoi nous sommes le meilleur choix</h1>
-   </article>
+         <div className="mb-4 flex items-center justify-between">
+            <h5 className="text-4xl font-bold uppercase leading-none text-gray-900 dark:text-white">
+                Pourquoi nous sommes le meilleur choix
+            </h5>
+          </div>
  <article className='grid gap-4 grid-cols-2 sm:grid-cols-1 md:grid-cols-2'>
       { chooseUs.map((choose)=>{
         return(
+          <div className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-120'>
             <Card key={choose.id}>
-              <div className='flex flex-row gap-4  p-4'>
-                    <b className=' text-grey_varient text-xl'>
+              <div className='flex flex-row gap-4  p-4 '>
+                    <b className=' text-xl  text-gray-600 dark:text-white-700'>
                         {choose.id}
                     </b>
                     <div className='flex flex-col gap-4 '>
@@ -27,6 +29,7 @@ function Choose() {
                     </div>
               </div>
           </Card>
+          </div>
           )
       })}  
   </article>

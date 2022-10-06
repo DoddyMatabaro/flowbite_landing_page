@@ -9,10 +9,18 @@ function EgProjects() {
 
     return (
     <section className='h-screen sm:h-auto md:h-screen px-10 py-20 flex flex-col gap-20'>
-        <article className="flex flex-row gap-4">
-                <div className='bg-black h-4 w-3 mt-5'></div>
-                <h1 className="text-5xl font-bold uppercase ">Pourquoi nous sommes le meilleur choix</h1>
-      </article>
+
+      <div className="mb-4 flex items-center justify-between">
+      <h5 className="text-4xl font-bold leading-none text-gray-900 dark:text-white">
+         Pourquoi nous sommes le meilleur choix
+      </h5>
+      <a
+        href="#"
+        className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+      >
+        Voir plus
+      </a>
+    </div>
         <article className='flex my-10 flex-row gap-2 justify-center align-middle h-[95%] sm:flex-col sm:h-auto  md:flex-row md:h-screnn'>
             <div className=' w-1/4 md:rounded-bl-[100px] xl:rounded-bl-[100px] sm:w-full sm:rounded-t-[100px] shadow-2xl shadow-black overflow-hidden'>
               <img src={projectsEg[0]} alt='conception' className='max-w-full h-full object-cover'/>

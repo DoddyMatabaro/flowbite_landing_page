@@ -113,12 +113,19 @@ const social = [
   
   // projects images 
   const cache = {};
+  const cache2 = {};
   function importAll(r) {
     r.keys().forEach((key) => (cache[key] = r(key)));
   }
+  // hero 
+  function importAll2(r) {
+    r.keys().forEach((key) => (cache2[key] = r(key)));
+  }
   // Note from the docs -> Warning: The arguments passed to require.context must be literals!
   importAll(require.context("../assets/ECR", false, /\.(png|jpe?g|svg)$/));
+  importAll2(require.context("../assets/hero", false, /\.(png|jpe?g|svg)$/));
   export const projects = Object.entries(cache).map(module => module[1]);
+  export const heroPics = Object.entries(cache2).map(module => module[1]);
   // uses eg 
 //   {projects.map((image,index) => (
 //     <img  key={index.toString()} style={{width: 100}} src={image} />
@@ -130,27 +137,27 @@ export const projectsEg = [left, middle, right];
 export  const chooseUs = [
     {
       id: "01",
-      title: 'Titre 1',
+      title: "Ancienneté et Références",
       detail:
-        ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
+        "Le nombre important des projets réalisés selon les rêves de nos client font de l'E.C.R sarl un choix de premier plan dans le choix pour vos projets.",
     },
     {
       id: "02",
-      title: 'Titre 2',
+      title: 'Devis et prix',
       detail:
-        ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
+        "Le cout du projet étant un des éléments clés pour reussir son projet ECR fait de son mieux pour satisfaire ses clients à un prix descent",
     },
     {
       id: "03",
-      title: 'Titre 3',
+      title: 'Fiabilité',
       detail:
-        ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
+      "L'entreprise Etude Conception et  Réalisation sarl est un entreprise reconnu et enregistré à l'Etat Congolais, imatriculée : CD/BKV/RCCM/22-B-00113",
     },
     {
       id: "04",
-      title: 'Titre 4',
+      title: 'Satisfaction',
       detail:
-        ' lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.',
+      "La performance et l'ingeniosité de notre équipe rendent adequates les attentes du client et les réalisation du projet. le gout d'un travail bien fait."
     },
   ];
   
