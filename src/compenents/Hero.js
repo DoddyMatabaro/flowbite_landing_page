@@ -3,7 +3,6 @@ import React from 'react'
 import {hero, heroPics} from '../assets/data';
 
 function Hero() {
-    console.log(heroPics);
   return (
     <div>
         <div className="sm:h-64 xl:h-96 2xl:h-96 ">

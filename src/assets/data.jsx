@@ -1,8 +1,5 @@
 import React from 'react';
 import myLogo from './logo1.png';
-import heroImage from './images/background.jpg';
-import heroImage2 from './images/ECR/hero.jpg';
-import heroImage3 from './images/ECR/hero2.png';
 import etude from '../assets/dimension/etude.jpeg';
 import cons from '../assets/dimension/con.jpg';
 import realisation from '../assets/dimension/realisation.jpg';
@@ -48,8 +45,6 @@ export const leftLinks = [
 export const hero = {
       devise: "Réalisez proprement  votre projet de rêve avec une nouvelle expérience.",
       about_info: "ECR sarl est une société spécialisée dans le génie civil : construction de bâtiments  complets, construction d’autres ouvrages de génie civil, commerce de gros d’autres équipements industriels et fournitures diverses.",
-      image:heroImage2,
-      image2:heroImage3,
       client:20,
       projet:50,
       button_label: "BUILD YOUR PROJET",
